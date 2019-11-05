@@ -1,0 +1,207 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-background {
+  background-image: url('../images/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg');
+}
+
+.parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+}
+
+.flex-middle {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.first-character {
+  font-size: 100px; 
+  color: #FF9800;
+}
+
+.bg-dark {
+  background-color: #0c0c0c !important;
+}
+
+.bg-dark-1 {
+  background-color: #111111 !important;
+}
+
+.bg-dark-2 {
+  background-color: #252525 !important;
+}
+
+.section-title {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-title .text-background {
+  position: absolute;
+  font-size: 70px;
+  top: -14px;
+  width: 100%;
+  left: 0;
+  z-index: 0;
+  font-weight: 1000;
+}
+
+.section-title .title {
+  z-index: 17; 
+  position: relative; 
+  font-size: 24px; 
+  font-weight: 1000; 
+  color: #ff9800;
+}
+
+th, td {
+  padding-left: 0 !important;
+}
+
+td {
+  color: #555555;
+}
+
+.parallax {
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+
+.parallax-section {
+  min-height: 200px;
+  background-image: url('../images/carlos-muza-hpjSkU2UYSU-unsplash.jpg');
+}
+
+.parallax-section > div {
+  min-height: inherit;
+}
+
+.text-gold {
+  color: #ff9800;
+}
+
+.blockquote::before {
+  font-family: Arial;
+  content:  "\201C";
+  color: #ff9800;
+  font-size: 4em;
+  position:  absolute;
+  left:  -32px;
+  top: -36px;
+}
+
+.blockquote::after {
+  font-family: Arial;
+  content:  "\201d";
+  color: #ff9800;
+  font-size: 4em;
+  position:  absolute;
+  right:  -32px;
+  bottom: -20px;
+}
+
+.skill-card {
+  position: relative;
+}
+
+.skill-card .card-title {
+  transition: .2s ease;
+}
+
+.skill-card::after {
+  content: "";
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  height: 3px;
+  position: absolute;
+  transition: .2s ease;
+  background-color: #ff9800;
+}
+
+.skill-card:hover .card-title {
+  color: #ff9800;
+}
+
+.skill-card:hover::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.img-box {
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.img-box .desc {
+  position: absolute;
+  transition: .5s ease;
+  width: 110%;
+  transform: rotate(0);
+}
+
+.img-box:hover .desc {
+  bottom: 18px;
+  left: -13px;
+  background: rgba(0, 0, 0, .7);
+  transform: rotate(3deg);
+  padding: 5px 22px;
+  color: #fff;
+}
+
+.img-box img {
+  transition: .8s ease;
+  filter: grayscale(1);
+  transform: scale(1);
+}
+
+.img-box:hover img {
+  transform: scale(1.2);
+  filter: grayscale(0);
+}
+
+.text-white {
+  color: #ababab !important;
+}
+
+.contact-item {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact-item > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  height: 100%;
+}
+
+.contact-item > div p {
+  margin-bottom: 0;
+}
+
+.contact-item:nth-child(2) {
+  border: 1px solid transparent;
+  border-left-color: #ff9800;
+  border-right-color: #ff9800;
+}
